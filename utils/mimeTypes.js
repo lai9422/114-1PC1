@@ -19,5 +19,5 @@ const contentTypes = {
  * @returns {string} MIME 類型，預設為 'text/plain'
  */
 export function getContentType(extname) {
-  return contentTypes[extname] || 'text/plain'; // 預設為純文字類型
+  return contentTypes[extname] || contentTypes['default']; // 預設為純文字類型
 }
